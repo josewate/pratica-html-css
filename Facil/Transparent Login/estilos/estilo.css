@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    font-family: Calibri;
+}
+
+/* Remover todas as configurações de margem do HTML e do BODY */
+html, body {
+    margin: 0;
+}
+
+/* Estiliza o fundo do site */
+.full-screen-container {
+    background-image: url('../imagens/wallpaper003.jpg');
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estiliza o container que armazena toda a informação visível do site */
+.login-container {
+    background-color: hsla(201, 100%, 6%, 0.6);
+    padding: 50px 30px;
+    min-width: 400px;
+    width: 50%;
+    max-width: 600px;
+    border-radius: 5px;
+}
+
+/* Estiliza o título do conteúdo */
+.login-title {
+    color: white;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    font-weight: normal;
+}
+
+/* Altera a posição dos campos de dados */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* Estiliza os etiquetas dos campos de dados (remove os estilos padrões das etiquetas por estilos customizados) */
+.input-group label {
+    color: white;
+    font-weight: lighter;
+    font-size: 1.5em;
+    margin-bottom: 7px;
+}
+
+/* Estiliza os campos de dados (remove os estilos padrões dos campos de dados por estilos customizados) */
+.input-group input {
+    font-size: 1.5em;
+    padding: .1em .25em;
+    background: hsla(201, 100%, 91%, 0.3);
+    border: 1px solid hsla(201, 100%, 6%);
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: lighter;
+}
+
+/* Aplicar o foco nos campos de dados (alterar a cor da borda da borda ao interagir com eles) */
+.input-group input:focus {
+    border: 1px solid hsla(201, 100%, 50%);
+}
+
+/* Estiliza o butão de log In (remove os estilos padrões do butão por estilos customizados) */
+.login-button {
+    padding: 10px 30px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: hsla(201, 100%, 50%, 0.1);
+    border: 1px solid hsla(201, 100%, 50%);
+    outline: none;
+    font-size: 1.5em;
+    color: white;
+    font-weight: lighter;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* Aplicar um efeito sobre o butao de log In (alterar a cor do fundo do butão ao passar o mouse sobre ele */
+.login-button:hover {
+    background-color: hsla(201, 100%, 50%, 0.3);
+}
+
+/* Aplicar o foco no butão de log In (alterar a cor do fundo do butão ao interagir com ele) */
+.login-button:focus {
+    background-color: hsla(201, 100%, 50%, 0.3);
+}
