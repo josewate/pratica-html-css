@@ -1,0 +1,101 @@
+:root {
+    --placeholder: gray;
+    --color: #ffffff;
+    --text-color: #ffffff;
+    --bg-color: rgb(40, 40, 71);
+    --bg-gradient1: rgba(58, 58, 158, 0.8);
+    --bg-gradient2: rgba(136, 136, 206, 0.7);
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient( 115deg, var(--bg-gradient1), var(--bg-gradient2)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+#title, #description {
+    margin: 1em auto;
+    text-align: center;
+}
+
+p {
+   
+}
+
+form {
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--bg-color);
+    border-radius: 5px;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset:first-of-type {
+    width: unset;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.inline label {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+input, textarea, select {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+input, textarea, select {
+    background-color: var(--color);
+    border: 1px solid var(--color);
+    color: var(--placeholder);
+    min-height: 2em;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: unset;
+    margin: -1px 10px 0 0 ;
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    background-color: var(--bg-color);
+    padding: 1em;
+    border-radius: 3px;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--bg-gradient1);
+    color: #ffffff;
+}
