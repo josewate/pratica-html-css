@@ -1,0 +1,14 @@
+body {
+    background-color: #111426;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    color: #7e7edf;
+}
+
+img {
+    width: 300px;
+    border-radius: 5px;
+}

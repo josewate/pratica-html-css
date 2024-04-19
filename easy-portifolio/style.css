@@ -1,0 +1,66 @@
+/* Universal style config */
+body {
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    padding: 0 50px;
+}
+
+/* Home style config */
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    font-weight: bold;
+    align-items: center;
+    padding: 16px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border-radius: 50%;
+    border: 5px solid rgb(37, 121, 37);
+}
+
+footer img {
+    width: 25px;
+    height: 25px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    margin: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 2px;
+}
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    color: rgb(37, 121, 37);
+}
+
+a:hover {
+    color: rgb(37, 121, 37);
+}
+
